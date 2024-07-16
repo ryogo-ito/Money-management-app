@@ -5,12 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@ant-design/nextjs-registry':
+    specifier: ^1.0.0
+    version: 1.0.0(@ant-design/cssinjs@1.21.0)(antd@5.19.2)(next@14.2.5)(react-dom@18.3.1)(react@18.3.1)
   antd:
     specifier: ^5.19.2
     version: 5.19.2(react-dom@18.3.1)(react@18.3.1)
   next:
     specifier: 14.2.5
     version: 14.2.5(react-dom@18.3.1)(react@18.3.1)
+  prettier:
+    specifier: ^3.3.3
+    version: 3.3.3
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -79,6 +85,22 @@ packages:
       '@babel/runtime': 7.24.8
       classnames: 2.5.1
       rc-util: 5.43.0(react-dom@18.3.1)(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
+
+  /@ant-design/nextjs-registry@1.0.0(@ant-design/cssinjs@1.21.0)(antd@5.19.2)(next@14.2.5)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-kU1K1UOhwrF6DPv73MhuL5a6U4e6/TiFapeLUt/c/kch9h5qFwEaJPb4RSJKNw0PRBfqCAPS011wVm4wYcrqbQ==}
+    peerDependencies:
+      '@ant-design/cssinjs': ^1.18.2
+      antd: ^5.0.0
+      next: ^14.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      '@ant-design/cssinjs': 1.21.0(react-dom@18.3.1)(react@18.3.1)
+      antd: 5.19.2(react-dom@18.3.1)(react@18.3.1)
+      next: 14.2.5(react-dom@18.3.1)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     dev: false
@@ -2288,6 +2310,12 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
     dev: true
+
+  /prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
 
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
